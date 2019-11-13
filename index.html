@@ -1,66 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="The whole life of cheon.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- FontAwesome -->
+    <link  rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- customer css -->
+    <link rel="stylesheet" href="./cover.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>cheon's home</title>
+    <meta name="description" content="cheon's homepage">
     <meta name="author" content="cheon">
     <link rel="icon" href="cat.jpg">
 
-    <title>cheon's homepage</title>
-
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
   </head>
-
-  <body>
-
-    <div class="site-wrapper">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">cheon</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="https://number317.github.io">Home</a></li>
-                  <li><a href="https://number317.github.io/blog">Blog</a></li>
-                  <li><a href="https://github.com/number317">Projects</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">cheon's homepage</h1>
-            <p class="lead">广告位招租。</p>
-            <p class="lead">Advertising space for rent.</p>
-            <p class="lead"><strong>welcome</strong></p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy 2019 cheon</p>
-            </div>
-          </div>
-
-        </div>
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="https://www.github.com/number317" target="_blank">
+      <img id="author" src="images/author.jpg" width="30" height="30" class="d-inline-block align-top" alt="avatar">
+      cheon
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link" href="#about">about<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="https://www.cheon.site/blog/">blog</a>
+        <a class="nav-item nav-link" href="#project">project</a>
+        <a class="nav-item nav-link" href="#contact">contact</a>
       </div>
-
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="painting-bg">
+      <div class="painting-bg-left"></div>
+      <div class="painting-bg-right"></div>
+    </div>
+    <div id="about">
+      <img class="avatar" src="./images/author.jpg" alt="cheon's avatar"/>
+      <p id="moto"><i>Life is a dance we all have to do</i></p>
+      <div class="tags">
+        <span class="badge badge-customer">archlinux</span>
+        <span class="badge badge-customer">vim</span>
+        <span class="badge badge-customer">shell</span>
+        <span class="badge badge-customer">c</span>
+        <span class="badge badge-customer">docker</span>
+        <span class="badge badge-customer">kubernetes</span>
+      </div>
+      <div class="container intro">
+      <p>Operation and Maintenance Engineer, with practical experience in application migration to cloud, application monitoring, and devops; devoted to docker and kubernetes.</p>
+      <ul class="skill">
+        skills:
+        <li>lanugages: shell, c</li>
+        <li>editor: vim</li>
+        <li>docker: k8s</li>
+        <li>automation: ansible</li>
+        <li>CI: gitlab-ci, travis-ci</li>
+        <li>monitoring: prometheus, grafana, pinpoint</li>
+        <li>log: fluent-bit, fluentd, logback</li>
+        <li>...</li>
+      </ul>
+      </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  </body>
-</html>
+    <hr/>
 
-<script>
-    console.log("Hey man, nice to see you here! Would you want to rent my advertising space?")
-</script>
+    <div id="project" class="row">
+      <div class="col-md-12">
+        <h1 class="display-4 text-center">Projects</h1>
+      </div>
+      <div class="card shadow col-md-3 offset-md-2">
+        <img src="https://raw.githubusercontent.com/number317/aloha/master/images/screenshot.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text"><a href="https://www.github.com/number317/aloha.git" target="_blank">aloha</a> A clean hugo theme.</p>
+        </div>
+      </div>
+
+      <div class="card shadow col-md-3 offset-md-2">
+        <img src="https://raw.githubusercontent.com/number317/ssh-tool/master/img/hide.jpg" class="card-img-top" alt="ssh-tool-hide">
+        <img src="https://raw.githubusercontent.com/number317/ssh-tool/master/img/show.jpg" class="card-img-top" alt="ssh-tool-show">
+        <div class="card-body">
+          <p class="card-text"><a href="https://www.github.com/number317/ssh-tool.git" target="_blank">ssh-tool</a> This is a small tool to manage ssh server info in command line. Write the servers' info down in the config file so that you don't need to remember the servers' ip, password or port.</p>
+          <p><a class="btn btn-light" href="https://github.com/number317" target="_blank">More Projects</a></p>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div id="contact" class="row">
+      <div class="col-md-12">
+        <h1 class="display-4 text-center">Contact</h1>
+      </div>
+      <div class="col-md-6 offset-md-3">
+        <form action="MAILTO:cheon0112358d@gmail.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+
+            <label for="InputEmail">Email address</label>
+            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="example@example.com" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" aria-describedby="phoneHelp" placeholder="Your phone number">
+            <small id="phoneHelp" class="form-text text-muted">Will never share your information with anyone else.</small>
+
+            <label for="validationTextarea">Email body</label>
+            <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+          </div>
+          <div class="col-auto my-1">
+            <button type="submit" class="btn btn-light">Submit</button>
+            <button type="reset" class="btn btn-light">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer" class="row">
+      <div class="text-center col-md-12">
+        <div style="margin-top: 85px;">
+          <p class="text-muted">cheon © 2019</p>
+        </div>
+        <div class="fixed-bottom" style="bottom: 60px;">
+          <a class="text-muted" href="https://www.github.com/number317/" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+          <a id="wechat" class="text-muted"">
+            <i class="fa fa-wechat"></i>
+          </a>
+          <img class="qrcode" src="./images/wechat.jpg">
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
